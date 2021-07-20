@@ -1,0 +1,196 @@
+<html>
+    <head>
+        <title>Poyicioniranje vezba 2</title>
+        <meta name="keyword" content="Navbar, CSS, position">
+        <meta name="description" content="nav tag, position of elements on the page">
+        <meta name="author" content="Dragana B.">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            .navbar {
+                background-color: red;
+                width: 960px;
+                margin-bottom: 2px;
+            }
+            .navbar li {
+                float: right;
+                padding: 15px;
+                list-style: none;
+                color: white;
+                font-weight: bold;
+            }
+            .navbar ::before,
+            .navbar ::after {
+                display: table;
+                content: "";
+            }
+            .navbar ::after {
+                clear: both;
+            }
+            .wrapper {
+                width: 960px;
+                margin: 0 auto;
+            }
+            img {
+                width: 478px;
+                height: 300px;
+            }
+            .firstDiv {
+                background-color: red;
+                color: white;
+                height: 200px;
+                line-height: 200px;
+                text-align: center;
+            }
+            .secondDiv {
+                background-color: slategrey;
+                color: white;
+                height: 200px;
+                line-height: 200px;
+                text-align: center;
+            }
+            .thirdDiv {
+                background-color:gold;
+                color: white;
+                height: 200px;
+                line-height: 200px;
+                text-align: center;
+            }
+            .fourthDiv {
+                background-color:green;
+                color: white;
+                height: 200px;
+                line-height: 200px;
+                text-align: center;
+            }
+            .fifthDiv {
+                background-color:red;
+                color: white;
+                height: 200px;
+                line-height: 200px;
+                text-align: center;
+            }
+            .sixthDiv {
+                background-color:slategrey;
+                color: white;
+                height: 200px;
+                line-height: 200px;
+                text-align: center;
+            }
+            .eighthDiv {
+                background-color:gold;
+                color: white;
+                height: 200px;
+                line-height: 200px;
+                text-align: center;
+            }
+            .ninethDiv {
+                background-color:green;
+                color: white;
+                height: 200px;
+                line-height: 200px;
+                text-align: center;
+            }
+            .seventhDiv {
+                float: right;
+                background-color:gold;
+                height: 250px;
+                width: 300px;
+                line-height: 30px;
+
+            }
+            footer {
+                background-color: gray;
+                color: white;
+                height: 30px;
+                clear: both;
+            }
+            .footer {
+                width: 960px;
+                margin: auto;
+                padding-top: 3px;
+            }
+            article {
+                width: 32%;
+                display: inline-block;
+                margin: 3px;
+                margin-bottom: 15px;
+            }
+            li {
+                list-style-type: none;
+                padding: 15px;
+                border-bottom: 1px solid gray;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            .navbarA {
+                color: white;
+            }
+            
+      
+        </style>
+    </head>    
+    <body>
+        <main class="wrapper">
+            <nav class="navbar">
+                <ul>
+                    <li><a class="navbarA" href="#">Blog</a></li>
+                    <li><a class="navbarA" href="#">Contact</a></li>
+                    <li><a class="navbarA" href="#">About</a></li>
+                    <li><a class="navbarA" href="#">Home</a></li>
+                </ul>
+            </nav>
+            <img src="https://armyyazilim.com/wp-content/uploads/2019/10/css.png" alt="csslogo">
+            <img src="http://www.codinghelptech.com/blog_post/pqzvkdbe_HTML5-Present-Past-and-Future.jpg" alt="htmlphoto">
+            <article>
+                <div class="firstDiv">300 x 200</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis nisl justo. Maecenas felis orci, rutrum non risus bibendum, condimentum pellentesque metus. Cras a tellus nec tellus eleifend semper. Pellentesque sed aliquam turpis. Integer venenatis libero tortor, et accumsan mi feugiat non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc mollis ligula eu felis congue, id blandit nisl suscipit. Mauris vulputate consequat gravida.</p>
+            </article>
+            <article>
+                <div class="secondDiv">300 x 200</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis nisl justo. Maecenas felis orci, rutrum non risus bibendum, condimentum pellentesque metus. Cras a tellus nec tellus eleifend semper. Pellentesque sed aliquam turpis. Integer venenatis libero tortor, et accumsan mi feugiat non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc mollis ligula eu felis congue, id blandit nisl suscipit. Mauris vulputate consequat gravida.</p>
+            </article>  
+            <article class="seventhDiv">
+                <ul>
+                    <li><a href="#">Rebuilding slack.com?</a></li>
+                    <li><a href="#">Rebuilding slack.com?</a></li>
+                    <li><a href="#">Rebuilding slack.com?</a></li>
+                    <li><a href="#">Rebuilding slack.com?</a></li>
+                </ul>
+            </article>
+            <article>
+                <div class="thirdDiv">300 x 200</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis nisl justo. Maecenas felis orci, rutrum non risus bibendum, condimentum pellentesque metus. Cras a tellus nec tellus eleifend semper. Pellentesque sed aliquam turpis. Integer venenatis libero tortor, et accumsan mi feugiat non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc mollis ligula eu felis congue, id blandit nisl suscipit. Mauris vulputate consequat gravida.</p>
+            </article>
+            <article>
+                <div class="fourthDiv">300 x 200</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis nisl justo. Maecenas felis orci, rutrum non risus bibendum, condimentum pellentesque metus. Cras a tellus nec tellus eleifend semper. Pellentesque sed aliquam turpis. Integer venenatis libero tortor, et accumsan mi feugiat non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc mollis ligula eu felis congue, id blandit nisl suscipit. Mauris vulputate consequat gravida.</p>
+            </article>
+            <article>
+                <div class="fifthDiv">300 x 200</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis nisl justo. Maecenas felis orci, rutrum non risus bibendum, condimentum pellentesque metus. Cras a tellus nec tellus eleifend semper. Pellentesque sed aliquam turpis. Integer venenatis libero tortor, et accumsan mi feugiat non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc mollis ligula eu felis congue, id blandit nisl suscipit. Mauris vulputate consequat gravida.</p>
+            </article>
+            <article>    
+                <div class="sixthDiv">300 x 200</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis nisl justo. Maecenas felis orci, rutrum non risus bibendum, condimentum pellentesque metus. Cras a tellus nec tellus eleifend semper. Pellentesque sed aliquam turpis. Integer venenatis libero tortor, et accumsan mi feugiat non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc mollis ligula eu felis congue, id blandit nisl suscipit. Mauris vulputate consequat gravida.</p>
+            </article>
+            <article>
+                <div class="eighthDiv">300 x 200</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis nisl justo. Maecenas felis orci, rutrum non risus bibendum, condimentum pellentesque metus. Cras a tellus nec tellus eleifend semper. Pellentesque sed aliquam turpis. Integer venenatis libero tortor, et accumsan mi feugiat non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc mollis ligula eu felis congue, id blandit nisl suscipit. Mauris vulputate consequat gravida.</p>
+            </article>
+            <article>    
+                <div class="ninethDiv">300 x 200</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis nisl justo. Maecenas felis orci, rutrum non risus bibendum, condimentum pellentesque metus. Cras a tellus nec tellus eleifend semper. Pellentesque sed aliquam turpis. Integer venenatis libero tortor, et accumsan mi feugiat non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc mollis ligula eu felis congue, id blandit nisl suscipit. Mauris vulputate consequat gravida.</p>
+            </article>
+        </main> 
+        <footer>
+            <div class="footer">©BitStudent</div>
+        </footer>
+    </body>
+</html>    

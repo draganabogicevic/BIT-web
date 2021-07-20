@@ -1,0 +1,13 @@
+@mixin flexCenter($direction, $wrap) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin buttonStyle {
+    padding: 10px;
+    margin-bottom: 50px;
+} 
+    

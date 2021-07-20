@@ -1,0 +1,42 @@
+@import '_variables.scss';
+@import '_navbar.scss';
+@import '_mixins.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: latobold;
+    src: url(/PrtojectDB220521/css/fonts/Lato-Bold.ttf);
+}
+body {
+    font-family: latobold;
+   
+}
+textarea {
+    height: 150px;
+}
+
+#bootstAndSass,
+#about,
+#send {
+    background-color: $greenBackgroundColor;
+}
+
+footer,
+#main {
+background-color: $grayBackgroundColor;
+}
+
+.circle {
+    @include socialNetworks();
+    i {
+        color:white;
+    }
+}
+
+
+

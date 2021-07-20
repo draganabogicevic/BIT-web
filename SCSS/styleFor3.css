@@ -1,0 +1,18 @@
+.first {
+  border: red solid 2px;
+  width: 70%;
+  height: 20%;
+}
+
+.second {
+  border: blue solid 2px;
+  width: 60%;
+  height: 70%;
+}
+
+.third {
+  border: green solid 2px;
+  width: 25%;
+  height: 500px;
+}
+/*# sourceMappingURL=styleFor3.css.map */

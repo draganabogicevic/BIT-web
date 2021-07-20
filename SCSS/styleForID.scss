@@ -1,0 +1,50 @@
+@import './variablesForID';
+@import './mixins';
+
+* {
+    @include boxsizing();
+}
+
+body{
+    width: $bodyWidth;
+    background-color: $colorBackground;
+    margin: $mainMargins;
+    text-align: center;
+}
+.container {
+    @include flexPosition();
+    position: relative;
+    p {
+        margin-top: 50px;
+        text-align: left;
+        font-size: 15px;
+        @include textShadow();
+    }
+}
+img {
+    width: $imgWidth;
+    flex-basis: 35%;
+    border-radius: 25%;
+}
+table {
+    flex-basis: 23%;
+    padding-top: 30px;
+    margin: 25px;
+    border-radius: 15%;
+    padding: 15px;
+    td {
+        text-transform: capitalize;
+        background-color: white;
+        border-radius: 15%;
+        padding: 5px
+    }
+    @include boxShadow();
+}
+h2 {
+    @include h2position();
+    left: 40%;
+}
+.title2 {
+    @include h2position();
+    left: 66%;
+}

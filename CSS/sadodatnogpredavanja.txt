@@ -1,0 +1,54 @@
+From Nevena to Everyone:  09:22 PM
+background-image: url(SLIKA ZGRADE);
+    background-size: cover;
+    background-repeat: no-repeat;
+From Nevena to Everyone:  09:29 PM
+border: 1px solid rgb(20, 110, 180);
+    border-radius: 50px;
+    background-color: rgb(20, 110, 180);
+    font-size: 15px;
+    color: white;
+    font-weight: 300;
+    padding: 10px 30px;
+    margin: 35px auto;
+From Daniel Avramovic to Everyone:  09:40 PM
+https://html-css-js.com/css/generator/transform/
+-moz-transform: translate(-2px, -3px) skew(48deg, -32deg);
+-webkit-transform: translate(-2px, -3px) skew(48deg, -32deg);
+-o-transform: translate(-2px, -3px) skew(48deg, -32deg);
+-ms-transform: translate(-2px, -3px) skew(48deg, -32deg);
+transform: translate(-2px, -3px) skew(48deg, -32deg);
+From Nevena to Everyone:  10:09 PM
+.people {
+    background-color: rgb(127,194,247);
+    margin-top: 20px;
+}
+  
+.people img {
+    display: block;
+    border-radius: 50%;
+    border: solid 4px white;
+    padding: 10px;
+    margin: 40px 0 0 10px;
+    width: 88px;
+    float: left;
+}
+  
+  .people h4 {
+    float: left;
+    padding: 70px 0 0 15px;
+  }
+  
+  .people p{
+    clear:both;
+    padding: 14px;
+    font-weight: 20px;
+    line-height: 2.2;
+    color: white;
+    font-size: 19px;
+    padding-bottom: 20px;
+  }
+From Nikola Draganic to Everyone:  10:13 PM
+http://cactus.io/resources/toolbox/html-symbol-codes
+From Dragana Stojnov to Everyone:  10:22 PM
+https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-star-half-full

@@ -1,0 +1,67 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 60%;
+  background-color: lightblue;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  position: relative;
+}
+
+.container p {
+  margin-top: 50px;
+  text-align: left;
+  font-size: 15px;
+  text-shadow: 2px 2px 2px #CE5937;
+}
+
+img {
+  width: 50%;
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  border-radius: 25%;
+}
+
+table {
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+  padding-top: 30px;
+  margin: 25px;
+  border-radius: 15%;
+  padding: 15px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+table td {
+  text-transform: capitalize;
+  background-color: white;
+  border-radius: 15%;
+  padding: 5px;
+}
+
+h2 {
+  position: absolute;
+  top: 7%;
+  left: 40%;
+}
+
+.title2 {
+  position: absolute;
+  top: 7%;
+  left: 66%;
+}
+/*# sourceMappingURL=styleForID.css.map */

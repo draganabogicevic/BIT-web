@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>CSS i tabele</title>
+        <meta name="keywords" content="CSS, tables">
+        <meta name="description" content="primena CSS-a na tabele">
+        <meta name="author" content="Dragana B.">
+        <style>
+            table {
+                
+                border-collapse: collapse;
+                width: 100%;
+                text-align: center
+            }
+            .wrapper {
+                padding: 10px;
+                border: 2px solid black;
+                width: 30%;
+                margin: auto;
+            }
+
+            img {
+                height: 100px;
+            }
+            tr {
+                margin: 10px;
+            }
+            tr:nth-child(odd) {
+                background-color: lightgray;
+            }
+            tr:first-child {
+                background-color: red;
+                color: white;
+            }
+            td, th {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            tr:hover {
+                background-color: yellow;
+            }
+            .name {
+                text-align: left;
+                padding-left: 10px;
+            }
+            input:hover {
+                cursor: url("crvena.png");
+            }
+        
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Image</th>
+                    <th>RAM</th>
+                    <th>Camera</th>
+                    <th>Internal memory</th>
+                </tr>
+                <tr>
+                    <td class="name">Samsung S8+</td>
+                    <td>
+                        <img src="https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s8-plus-.jpg" alt="samsungs8+">
+                    </td>
+                    <td>6GB</td>
+                    <td>12Mpx</td>
+                    <td>128GB</td>
+                </tr>
+                <tr>
+                    <td class="name">iPhone X</td>
+                    <td>
+                        <img src="https://cdn2.mobilnisvet.com/N0RSaFvN5I7Zif-DYxtOvrsD7QuT5xFOmPKojSmHHVQ/sm:1/sh:1/el:0/q:85/wm:0.2:re:0:0:0.5/rs:fill:360:720/czM6Ly9tb2JpbG5pc3ZldGNvbS8yMDIxLzEvMTI3LzB0YjFnM3E2bDJiOHdwYjcya2s4LzIvdGYucG5n.webp" alt="iPhoneX">
+                    </td>
+                    <td>4GB</td>
+                    <td>12Mpx</td>
+                    <td>128GB</td>
+                </tr>
+                <tr>
+                    <td class="name">LG G6</td>
+                    <td>
+                        <img src="https://fdn2.gsmarena.com/vv/bigpic/lg-g6-new.jpg" alt="LGG6">
+                    </td>
+                    <td>6GB</td>
+                    <td>12Mpx</td>
+                    <td>128GB</td>
+                </tr>
+                <tr>
+                    <td class="name">Samsung S8+</td>
+                    <td>
+                        <img src="https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s8-plus-.jpg" alt="samsungs8+">
+                    </td>
+                    <td>6GB</td>
+                    <td>12Mpx</td>
+                    <td>128GB</td>
+                </tr>
+                <tr>
+                    <td class="name">iPhone X</td>
+                    <td>
+                        <img src="https://cdn2.mobilnisvet.com/N0RSaFvN5I7Zif-DYxtOvrsD7QuT5xFOmPKojSmHHVQ/sm:1/sh:1/el:0/q:85/wm:0.2:re:0:0:0.5/rs:fill:360:720/czM6Ly9tb2JpbG5pc3ZldGNvbS8yMDIxLzEvMTI3LzB0YjFnM3E2bDJiOHdwYjcya2s4LzIvdGYucG5n.webp" alt="iPhoneX">
+                    </td>
+                    <td>4GB</td>
+                    <td>12Mpx</td>
+                    <td>128GB</td>
+                </tr>  
+            </table>
+        </div>    
+    </body>
+</html>

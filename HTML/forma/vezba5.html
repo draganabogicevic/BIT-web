@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title>Vezba 5 Forme</title>
+        <style>
+            div {
+                margin: 10px;
+            }
+     
+        </style>
+        
+    </head>
+    <body>
+        <form>
+            <h1>Licna karta</h1>
+            <fieldset>
+                <legend>Osnovni podaci</legend>
+                <div>
+                    <label for="ime">Ime i prezime:</label>
+                    <input name="ime" id="ime" type="text" placeholder="Petar Petrovic"> 
+                </div>
+                <div>
+                    <label for="adresa">Adresa stanovanja:</label>
+                    <input name="adresa" id="adresa" type="text" max="40"> 
+                </div>
+                <div>
+                    <label for="mail">E-mail:</label>
+                    <input name="mail" id="mail" type="email" placeholder="petar.petrovic@gmail.com"> 
+                </div>
+                <div>
+                    <label for="firma">Naziv firme:</label>
+                    <input name="firma" id="firma" type="text">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Obrazovanje</legend>
+                <div>
+                    <label for="stepen">Stepen obrazovanja</label>
+                    <input id="stepen" name="stepen" type="radio" value="IV">IV
+                    <input id="stepen" name="stepen" type="radio" value="V">V
+                    <input id="stepen" name="stepen" type="radio" value="VI">VI
+                    <input id="stepen" name="stepen" type="radio" value="VII">VII
+                    <input id="stepen" name="stepen" type="radio" value="master">Master
+                    <input id="stepen" name="stepen" type="radio" value="doktorNauke">Doktor nauke
+                </div>
+                <div>    
+                    <label for="skola">Zavrsena skola/fakultet</label>
+                    <input id="skola" name="skola" type="text" max="40">
+                </div>
+                <div>
+                    <label for="dodatnoObrazovanje">Dodatno obrazovanje</label>
+                    <input id="dodatnoObrazovanje" name="dodatnoObrazovanje" type="text" max="40">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Sfere interesovanja</legend>
+                <div>
+                    <label>Your field of interest: </label> <br><br>
+                    <select name="interest" multiple="multiple">
+                        <option value="music">music</option>
+                        <option value="books">books</option>
+                        <option value="gaming">gaming</option>
+                        <option value="cooking">cooking</option>
+                        <option value="home decoring">home decoring</option>
+                        <option value="sport">sport</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="textArea">Dodatna interesovanja:</label> <br><br>
+                    <textarea id="textArea" name="textArea" cols="100" rows="5"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Omiljeno</legend>
+                <div>
+                    <label for="knjiga">Knjiga:</label>
+                    <input type="text" id="knjiga" name="knjiga">
+                </div>
+                <div>
+                    <label for="film">Film:</label>
+                    <input type="text" id="film" name="film">
+                </div>
+                <div>
+                    <label for="serija">Serija:</label>
+                    <input type="text" id="serija" name="serija">
+                </div>
+                <div>
+                    <label for="muzika">Muzika:</label>
+                    <input type="text" id="muzika" name="muzika">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Jos nesto...</legend>
+                <div>
+                    <label for="josNesto">Da li zelite jos nesto da dodate?</label> <br><br>
+                    <textarea id="textArea" name="textArea" cols="100" rows="5"></textarea>
+                </div>
+            </fieldset>
+            <div align="center">
+                <input type="reset" value="Reset">
+            </div>
+            <div align="center">
+            <input type="image" src="https://t4.ftcdn.net/jpg/02/77/41/47/240_F_277414736_kwzkkYOTx4y4vWbvyC1AkjleCFygaslA.jpg" width="50px" height="50px">
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>Vezba 2 position</title>
+        <meta name="keyword" content="CSS, Position, absolute, relativ, fixed">
+        <meta name="description" content="diffrent position on web page">
+        <meta name="author" content="Dragana B.">
+        <style>
+            body {
+                font-size: 20px;
+            }
+            li {
+                float: left;
+                padding: 7px;
+                padding-right: 15px;
+                list-style: none;
+                margin-bottom: 20px;
+            }
+            
+            a {
+                text-decoration: none;
+                color: black;
+                padding: 5px;
+            }
+            .nav {
+                background-color:gold;
+                text-align: center;
+            }
+           
+            .dropdown {
+                position: relative;
+                width: 200px;
+            }
+            .dropdownContent {
+                display: none;
+                position: absolute;
+                left: 60px;
+                top: 30px;
+                background-color: lightgray;
+                min-width: 200px;
+                text-align: left;
+            }
+            .dropdownContent a {
+                display: block;
+            }
+
+            .dropdownContent a:nth-child(odd) {
+                background-color: white;
+            }
+
+            .dropdown:hover .dropdownContent {
+                display: block;
+            }
+            .dropdownBtn {
+                border: none;
+                background-color: gold;
+                font-size: 19px;
+            }
+    
+            .navbar::before,
+            .navbar::after {
+                display: table;
+                content: "";
+            }
+            .navbar::after {
+                clear: both;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav class="nav navbar">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropdownBtn">Menu 1</button>
+                        <div class="dropdownContent first">
+                            <a href="#">Sub Menu 1</a>
+                            <a href="#">Sub Menu 2</a>
+                            <a href="#">Sub Menu 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropdownBtn">Menu 2</button>
+                        <div class="dropdownContent second">
+                            <a href="#">Sub Menu 1</a>
+                            <a href="#">Sub Menu 2</a>
+                            <a href="#">Sub Menu 3</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropdownBtn">Menu 3</button>
+                        <div class="dropdownContent third">
+                            <a href="#">Sub Menu 1</a>
+                            <a href="#">Sub Menu 2</a>
+                            <a href="#">Sub Menu 3</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>

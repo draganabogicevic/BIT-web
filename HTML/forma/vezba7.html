@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Vezba 7 Forme</title>
+        <style>
+            body {
+                width: 50%;
+            }
+            h1 {
+                text-align: center;
+            }
+            div {
+                margin: 10px;
+            }
+            fieldset {
+                margin: 7px;
+                background-color:lemonchiffon;
+            }
+            legend {
+                font-size: 30px;
+                font-style: italic;
+            }
+            #buttons {
+                position:relative;
+                left: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <h1>Catering reservations</h1>
+            <fieldset>
+                <legend>Personal data</legend>
+                <div>
+                    <label for="name">Name:</label>
+                    <input id="name" name="name" type="text" required>
+                </div>
+                <div>
+                    <label for="mail">Email:</label>
+                    <input id="mail" name="mail" type="email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone number:</label>
+                    <input id="phone" name="phone" type="number" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Location</legend>
+                <div>
+                    <label for="city">City:</label>
+                    <input id="city" name="city" type="text">
+                </div>
+                <div>
+                    <label for="street">Street:</label>
+                    <input id="street" name="street" type="text">
+                </div>
+                <div>
+                    <label for="streetNumber">Street number:</label>
+                    <input id="streetNumber" name="streetNumber" type="number">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Event info</legend>
+                <div>
+                    <label>Event:</label>
+                    <select name="event">
+                        <option value="birthday">Birthday</option>
+                        <option value="wedding" selected="selected">Wedding</option>
+                        <option value="company event">Company event</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="guestsNo">Number of gests:</label>
+                    <input id="guestsNo" name="guestsNo" type="number" min="10" max="300" placeholder="150">
+                </div>
+            </fieldset>
+            <div id="buttons">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Send reservation">
+            </div>
+        </form>
+    </body>
+</html>

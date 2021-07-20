@@ -1,0 +1,208 @@
+@import 'mixins';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    margin: 0 auto;
+}
+
+nav {
+    @include flexCenter(column, nowrap);
+    ul {
+        margin: 0;
+        padding: 0;
+    li {
+        list-style: none;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 20px;
+        &:last-child {
+            margin-bottom: 20px;
+        }
+    a {
+        text-decoration: none;
+        text-align: center;
+        color: black;
+        &:hover {
+            background-color: rgb(93, 62, 231);
+            color: white;
+        }
+    }
+}
+    }
+    .container {
+        a {
+            img {
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+  
+}  
+header {
+    background-image: url(zakyntos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    @include flexCenter(column, nowrap);
+    h1 {
+        text-align: center;
+    }
+    margin-bottom: 30px;
+   
+} 
+article {
+    @include flexCenter(column, nowrap);
+    
+    h2 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    p {
+        padding: 5px;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+    h3 {
+        align-self: center;
+    }
+    ul {
+        align-self: flex-start;
+        padding: 30px;
+    }
+    button {
+        @include buttonStyle ();
+    }
+}
+.usluge {
+    background-color: lightblue;
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    article {
+        &:last-child {
+            margin-bottom: 50px;
+        }
+    }
+}
+.noveUsluge {
+    @include flexCenter(column, nowrap);
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    p {
+        text-align: justify;
+    }
+    button {
+        @include buttonStyle();
+    }
+}
+.preporuke {
+    background-color: lightblue;
+    @include flexCenter(column, nowrap);
+    h2 {
+        margin-bottom: 30px;
+    }
+    img {
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+
+}
+footer {
+    @include flexCenter(column, nowrap);
+    padding: 10px;
+    background-color: blue;
+    color: white;
+}
+@media screen and(min-width: 768px) {
+    body {
+        position: relative;
+    
+    }
+    nav {
+        @include flexCenter(row, wrap);
+        ul {
+            display: flex;
+            flex-direction: row-reverse;
+            li {
+                margin: 10px;
+            }
+        }
+        .container {
+            a {
+                img {
+                    display: inline;
+                    position: absolute;
+                    left: 1%;
+                    width: 90px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+    header {
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    article {
+        h3 {
+            align-self: flex-start;
+        }
+        li {
+            list-style: url(bullet.PNG);
+        }
+    }
+    .usluge {
+        border-radius: 50% 0 0 0;
+      
+        .container {
+        display: flex;
+        flex-flow: row wrap;
+        h2 {
+            flex-basis: 100%;
+        }
+            article {
+                flex-basis: 50%;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        padding: 50px;
+        margin-bottom: 50px;
+    }
+    .preporuke {
+        border-radius: 0 50% 0 0;
+        .container {
+        @include flexCenter(row, wrap);
+        
+            article {
+                img {
+                    width: 300px;
+                }
+                flex-basis: 40%;
+                margin: 20px;
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }  
+    h2 {
+        padding: 20px;
+        &::after {
+            content: "";
+            width: 300px;
+            height: 10px;
+            background-color: blue;
+        }
+    }  
+}

@@ -1,0 +1,18 @@
+@mixin flexPosition {
+    display: flex;
+    flex-flow: wrap row;
+}
+@mixin boxsizing {
+    box-sizing: border-box;
+}
+@mixin h2position {
+    position: absolute;
+    top: 7%; 
+}
+@mixin textShadow {
+    text-shadow: 2px 2px 2px #CE5937;
+}
+@mixin boxShadow {
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+}

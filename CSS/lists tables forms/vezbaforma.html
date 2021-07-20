@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>CSS i forme</title>
+        <meta name="keywords" content="CSS, forms, Input, Select">
+        <meta name="description" content="stilizovanje formi">
+        <meta name="author" content="Dragana B.">
+        <style>
+            .conteiner {
+                width: 20%;
+                border: 2px solid black;
+                margin: auto;
+                padding: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .formWrapper {
+                background-color: lightgray;
+                text-align: center;
+                padding: 20px;
+           
+            }
+            h1 {
+                color: darkblue;
+                font-size: 50px;
+                width: 90%;
+                margin: auto;
+            }
+            hr {
+                width: 90%;
+                margin-bottom: 20px;
+               
+            }
+            span {
+                color:gold;
+            }
+            input {
+                border: 2px solid gray;
+                width: 90%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 7px;
+                margin-bottom: 7px;
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 12px 6px 5px 0px rgba(128,128,128,0.75);
+                -webkit-box-shadow: 12px 6px 5px 0px rgba(128,128,128,0.75);
+                -moz-box-shadow: 12px 6px 5px 0px rgba(128,128,128,0.75);
+            }
+            label {
+                text-align: left;
+                display: block;
+                width: 90%;
+                margin: auto;
+                font-size: 19px;
+            }
+            input[type="submit"] {
+                background-color: red;
+                color: white;
+                margin-top: 25px;
+            }
+            input:hover {
+                cursor: url(cursor1.png) 5 5, auto;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="conteiner">
+            <div class="formWrapper">
+                <h1>Form<span>Get</span></h1>
+                <hr>
+                <form>
+                    <label for="name">Full Name</label>
+                    <input id="name" name="name" type="text" placeholder="Full Name">
+                    <label for="mail">Email</label>
+                    <input id="mail" name="mail" type="email" placeholder="Email">
+                    <label for="contactNo">Contact Number</label>
+                    <input id="contactNo" name="contactNo" type="number" placeholder="Contact Number">
+                    <label for="address">Address</label>
+                    <input id="address" name="address" type="text" placeholder="Address">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

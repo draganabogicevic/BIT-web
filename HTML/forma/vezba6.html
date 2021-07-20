@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Vezba 6 Forme</title>
+        <style>
+            div {
+                margin: 10px;
+            }
+            #submit {
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Facebook post scheduling</legend>
+                <div>
+                    <label for="name">Name:</label>
+                    <input id="name" name="name" type="text" required placeholder="Please enter your name">
+                </div>
+                <div>
+                    <label for="date">Date for post create:</label>
+                    <input id="date" name="date" type="date">
+                </div>
+                <div>
+                    <label for="url">URL:</label>
+                    <input type="url" id="url" name="url">
+                </div><div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div align="center">
+                    <button type="submit" id="submit">Post</button>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>

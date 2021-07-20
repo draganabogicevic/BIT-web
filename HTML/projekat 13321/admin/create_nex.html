@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>HTML projekat 1</title>
+        <meta name="keywords" content="FBI">
+        <meta name="description" content="Most wanted criminals">
+        <meta name="author" content="Dragana B.">
+        <style>
+            #header {
+                margin-bottom: 20px;
+            }
+            fieldset {
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <a href="projekat13321.html">Back To Hompage</a>
+        </div>
+        <form>
+            
+            <fieldset>
+                <legend>Top Headline</legend>
+                <label for="headline">Headline text:</label>
+                <input type="text" id="headline" name="headline">
+            </fieldset>
+            <fieldset>
+                <legend>Images</legend>
+                <label for="img1">Image 1:</label>
+                <input type="file" id="img1" name="img1"><br>
+                <label for="img2">Image 2:</label>
+                <input type="file" id="img2" name="img2"><br>
+                <label for="img3">Image 3:</label>
+                <input type="file" id="img3" name="img3"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Reward</legend>
+                <label for="reward">Reward money:</label>
+                <input type="text" id="reward" name="reward">
+            </fieldset>
+            <fieldset>
+                <legend>Description</legend>
+                <label for="aliases">Aliases:</label><br>
+                <input type="text" id="aliases" name="aliases"><br><br>
+                <label for="birth">Birth:</label><br>
+                <input type="text" id="birth" name="birth"><br><br>
+                <label for="heir">Heir:</label><br>
+                <input type="text" id="heir" name="heir"><br><br>
+                <label for="eyes">Eyes:</label><br>
+                <input type="text" id="eyes" name="eyes"><br><br>
+                <label for="height">Height:</label><br>
+                <input type="text" id="height" name="height"><br><br>
+                <label for="weight">Weight:</label><br>
+                <input type="text" id="weight" name="weight"><br><br>
+                <label for="sex">Sex:</label><br>
+                <input type="text" id="sex" name="sex"><br><br>
+                <label for="id">ID Number:</label><br>
+                <input type="number" id="id" name="id"><br><br>
+                <label for="occupation">Occupation:</label><br>
+                <input type="text" id="occupation" name="occupation"><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Remarks</legend>
+                <textarea cols="255" rows="10" placeholder="Remarks text"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Caution</legend>
+                <textarea cols="255" rows="10" placeholder="Caution text"></textarea>
+            </fieldset>
+            <div>
+                <button type="reset"><img src="..\images\reset.png" width="20px" height="20px"> Reset</button>
+                <button type="submit"><img src="..\images\create.png" width="20px" height="20px"> Create poster</button>
+            </div>
+        </form>
+    </body>
+</html>
